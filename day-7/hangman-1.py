@@ -1,21 +1,76 @@
-#Step 1 
-import random
-word_list = ["aardvark", "baboon", "camel"]
 
-#TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
+ _
+| |
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |
+                   |___/
+Pssst, the solution is dizzying.
+Guess a letter: d
+d _ _ _ _ _ _ _
 
-choosen_word = random.choice(word_list)
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
 
+Guess a letter: i
+d i _ _ _ i _ _
 
-#TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-guess = input("Your guess : ").lower()
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
 
+Guess a letter: z
+d i z z _ i _ _
 
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
 
-#TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+Guess a letter: y
+d i z z y i _ _
 
-for i in range(len(choosen_word)):
-  if choosen_word[i] == guess:
-    print(True)
-  else:
-    print(False)
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+
+Guess a letter: n
+d i z z y i n _
+
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+
+Guess a letter: g
+d i z z y i n g
+You win.
+
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
